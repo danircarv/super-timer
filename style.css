@@ -22,13 +22,15 @@ html.rain {
 
 html.bookstore {
   background: url("./assets/img/library-bg.jpg");
-  --timer-color: #ffffff;
+  --bg-color: none;
+  --timer-color: #dcc7c7;
 }
 
 html.fireplace {
   background: url("./assets/img/fireplace2-bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  --bg-color: none;
   --timer-bg-color: hsla(240, 6%, 17%, 0.798);
   --timer-color: #a01717;
 }
