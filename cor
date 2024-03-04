@@ -1,0 +1,82 @@
+#Standard{
+##Background
+#FFFFFF
+
+##Timer
+#323238
+
+##Button Selected
+#Background
+#E1E1E6
+#Color
+#323238
+}
+
+#Forest Theme{
+##Background
+#1F8107
+
+##Timer
+#1F3E18
+
+##Button Selected
+##Background
+#98C026
+##Color
+#1D3C15
+
+}
+
+#Rain Theme{
+##Background
+#9BC2D2
+
+##Timer
+#323238
+
+Button Selected
+##Background
+#02799D
+##Color
+#FFFFFF
+
+}
+
+Library Theme{
+##Background
+url(./assets/img/library-bg.jpg)
+
+##Timer
+#Div Color
+????
+#Items
+#323238
+
+Button Selected
+##Background
+#B98B46
+##Color
+#6B280C
+
+}
+
+Fireplace theme{
+##Background
+./assets/img/fireplace2-bg.jpg
+background-image: url(./assets/img/fireplace2-bg.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+
+##Timer
+#Div Color
+hsla(240, 6%, 17%, 0.798)
+????
+#Items
+#323238
+
+Button Selected
+##Background
+#352D2D
+##Color
+#D92121
+}

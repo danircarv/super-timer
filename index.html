@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./src/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="timer">
+        <section id="clock">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls">
+          <button data-action="toggleRunning" class="ph ph-play-circle">
+            <span class="sr-only">Iniciar contador</span>
+          </button>
+          <button data-action="toggleRunning" class="ph ph-stop-circle">
+            <span class="sr-only">Pausar contador</span>
+          </button>
+          <button data-action="set" class="ph ph-plus-circle">
+            <span class="sr-only">Adicionar 5 minutos</span>
+          </button>
+          <button data-action="reset" class="ph ph-minus-circle">
+            <span class="sr-only">Diminuir 5 minutos</span>
+          </button>
+        </section>
+      </div>
+      <div class="themes">
+        <div class="set-icons">
+          <img
+            class="icons"
+            id="forest"
+            src="./assets/img/forest.svg"
+            alt="Imagem de uma árvore"
+          />
+          <img
+            class="icons"
+            id="rain"
+            src="./assets/img/rain.svg"
+            alt="Imagem de uma nuvem chuvendo"
+          />
+        </div>
+
+        <div class="set-icons">
+          <img
+            class="icons"
+            id="bookstore"
+            src="./assets/img/bookstore.svg"
+            alt="Imagem da janela de uma livraria"
+          />
+          <img
+            class="icons"
+            id="fireplace"
+            src="./assets/img/fireplace.svg"
+            alt="Imagem de fogo"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
