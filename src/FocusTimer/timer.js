@@ -1,5 +1,6 @@
 import state from "./state.js";
 import * as el from "./elements.js";
+import { kitchenTimer } from "./sounds.js";
 
 export function countdown() {
   clearTimeout(state.countdownId);
@@ -18,6 +19,7 @@ export function countdown() {
   }
 
   if (minutes < 0) {
+    kitchenTimer.play();
     return;
   }
 

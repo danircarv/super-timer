@@ -20,13 +20,13 @@ export function set() {
   // el.seconds.focus();
 }
 export function add() {
-  state.minutes = state.minutes + 5;
+  state.minutes = Number(state.minutes) + 5;
   timer.updateDisplay();
 }
 
 export function minus() {
   if (state.minutes >= 5) {
-    state.minutes = state.minutes - 5;
+    state.minutes = Number(state.minutes) - 5;
   }
 
   timer.updateDisplay();
