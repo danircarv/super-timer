@@ -6,7 +6,21 @@ export function countdown() {
     return;
   }
 
-  console.log("iniciou");
+  let minutes = Number(el.minutes.textContent);
+  let seconds = Number(el.seconds.textContent);
+
+  seconds--;
+
+  if (seconds < 0) {
+    seconds = 59;
+    minutes--;
+  }
+
+  if (minutes < 0) {
+    return;
+  }
+
+  updateDisplay(minutes, seconds);
 
   setTimeout(() => countdown(), 1000);
 }

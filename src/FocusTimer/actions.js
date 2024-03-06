@@ -1,10 +1,14 @@
 import state from "./state.js";
 import * as timer from "./timer.js";
 
-export function toggleRunning() {
-  state.isRunning = !state.isRunning;
+export function playTimer() {
+  state.isRunning = true;
 
   timer.countdown();
+}
+
+export function stopTimer() {
+  state.isRunning = false;
 }
 
 export function set() {
